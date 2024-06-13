@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="card mt-3">
+        <div class="card-header">
+        {{resume.username}} {{resume.surname}}
+        </div>
+        <div class="card-body">
+            <p class="card-text">Job: {{resume.job}}</p>
+            <p class="card-text">University: {{resume.university}}</p>
+            <p class="card-text">Experience: {{resume.experience}}</p>
+            <p class="card-text">Languages: {{resume.languages}}</p>
+        </div>
+    </div>
+{% endblock body %}
